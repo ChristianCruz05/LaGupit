@@ -1,0 +1,19 @@
+HTML
+
+<!--BIG COMMENT-->
+<div class = "camelCase" id = "camelCase"></div>
+
+
+
+CSS
+
+/*comment*/
+.class{
+    /*only use classes for css. Avoid ids*/
+}
+
+Javascript
+//always comment what a function specifically does if it is not obvious
+function camelCase(){
+    //code
+}
