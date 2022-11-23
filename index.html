@@ -41,7 +41,7 @@
 
       .div-login {
         background-color: #DBBAB5;
-      } 
+      }
 
       button {
         background-color: #BC604D;
@@ -50,6 +50,22 @@
       button:hover {
         background-color: #9d5141;
       }
+
+      .login-box {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+          }
+
     </style>
 
 
@@ -62,7 +78,8 @@
     style="background-image: url(./assets/images/landingpagebackground.jpg);">
     <div class="absolute bg-black opacity-20 inset-0 z-0"></div>
     <!--Sign In Form-->
-    <div class="select-none absolute right-20 max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10">
+    <div class="login-box">
+    <div class="select-none max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10">
       <div class="text-center">
         <!--Logo-->
         <div class="flex items-center justify-center">
@@ -117,6 +134,7 @@
         </p>
 
       </form>
+    </div>
     </div>
   </div>
 
