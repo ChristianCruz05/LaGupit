@@ -1,0 +1,22 @@
+{
+  "name": "lagupit",
+  "version": "1.0.0",
+  "description": "this is a package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianCruz05/LaGupit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianCruz05/LaGupit"
+  },
+  "homepage": "",
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  }
+}
