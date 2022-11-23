@@ -41,6 +41,14 @@
       div{
         font-family: 'Questrial', sans-serif;
       }      
+
+      button {
+        background-color: #BC604D;
+      }
+
+      button:hover {
+        background-color: #9d5141;
+      }
     </style>
 
     <title>LaGupit</title>
@@ -48,48 +56,66 @@
 </head>
 <body>
     <header>
-      <nav class="p-2 w-full">
+<!--      <nav class="p-2 w-full">
         <a href="" class="flex items-center">
           <img src="/assets/images/LaGupitLogoWGrayBG.png" class="mr-5 h-10 w-10" alt="La Gupit Logo">
           <span class="text-xl text-white">La Gupit</span>
         </a>
-      </nav>
-          
+      </nav>-->
 		</header>
 
 		<main>
-      <div class="flex justify-center">
-      <div class="max-w-xs max-h-screen rounded-md">
-        <img class="-scale-50" src="/assets/images/LaGupitLogo.png" alt="La Gupit Logo">
-        <div>
-          <div class="text-center">
-            <h1>La Gupit</h1>
-          </div>
-          <div class="div-login p-3 rounded-md shadow-lg">
-            <div>
-              <form class="text-center">
-                <div class="p-2">
-                  <input type="email" name="email" id="email" placeholder="youremail@email.com" class="p-1 w-full rounded-md bg-gray-200 text-gray-400">
-                </div>
-  
-                <div class="p-2">
-                  <input type="password" name="password" id="password" placeholder="Your Password" class="p-1 w-full rounded-md bg-gray-200 text-gray-400"/>
-                </div>
-  
-                <div class="pt-1 pb-3">
-                  <button type="button" class="bg-black text-red-100 rounded-lg p-2">Sign In</button>
-                </div> 
-  
-                <p class="text-xs">Don't have an account yet? <a href="#" class="">Create one now</a></p>   
-  
-              </form>
-              </div>
-
-          </div>
+<!-- component -->
+<div class="relative min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center"
+	style="background-image: url(/assets/images/landingpagebackground.jpg);">
+	<div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+	<div class="absolute right-20 max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10">
+		<div class="text-center">
+      <div class="flex items-center justify-center">
+        <img src="/assets/images/LaGupitLogo.png" class="mr-5 h-10 w-10" alt="La Gupit Logo">
+      </div>
+			<h2 class="mt-6 text-3xl font-bold text-gray-900">
+				Welcome!
+			</h2>
+			<p class="mt-2 text-sm text-gray-600">Sign in to your account</p>
+		</div>
+		<form class="mt-8 space-y-6" action="#" method="POST">
+			<input type="hidden" name="remember" value="true">
+			<div class="relative">
+				<div class="absolute right-0 mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+					</svg>
         </div>
+				<label class="text-sm font-bold text-gray-700 tracking-wide">Email</label>
+				<input class=" w-full text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" 
+              type="" placeholder="mail@gmail.com" 
+              value="">
       </div>
+			<div class="mt-8 content-center">
+				<label class="text-sm font-bold text-gray-700 tracking-wide">
+					Password
+				</label>
+				<input class="w-full content-center text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="password" placeholder="Enter your password" value="">
       </div>
-
+			<div>
+				<button 
+          type="submit" 
+          class="w-full flex justify-center text-gray-100 p-4  rounded-full tracking-wide
+                font-semibold  focus:outline-none focus:shadow-outline shadow-lg cursor-pointer
+                transition ease-in duration-300">
+          Sign in
+        </button>
+			</div>
+			<p class="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
+				<span>Don't have an account?</span>
+				<a href="#" class="text-indigo-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300">Sign up</a>
+			</p>
+		</form>
+	</div>
+</div>
 
 		</main>
 		
