@@ -34,7 +34,11 @@
         background-color: #2C2828;
         }
         * {box-sizing:border-box}
-                        
+               
+        .colorpalette2 {
+          background-color: #e58a76;
+        }        
+
         .colorpalette3 {
           background-color: #C69895;
         }
@@ -62,7 +66,7 @@
 
 <body class="bg-red-50">
     <header>
-        <nav class="colorpalette3 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <nav class="colorpalette2 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
             <!-- Logo -->
             <a href="" class="flex items-center">
@@ -99,7 +103,7 @@
     </header>
     
     <main>
-    <div class="bg-gray-100">
+    <div>
         <div class="w-full text-white bg-main-color">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -114,7 +118,7 @@
                     <div class="bg-white p-3 border-t-4 border-green-400">
                         <div class="image overflow-hidden">
                             <img class="max-h-fit rounded-full"
-                            src="https://cdn.australianageingagenda.com.au/wp-content/uploads/2015/06/28085920/Phil-Beckett-2-e1435107243361.jpg"
+                            src="../assets/images/sampleimage.jpg"
                             alt="">
                         </div>
                         
@@ -288,7 +292,7 @@
                             </div>
                         </div>
                         <button
-                            class="mt-2 block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-2my-4">
+                            class="mt-2 block w-full text-red-600 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-2my-4">
                             Show Full Information</button>
                     </div> <!--bg-white p-3 shadow-sm rounded-sm-->
                     <!-- End of about section -->
@@ -296,7 +300,7 @@
                     <div class="my-4"></div>
 
                     <!-- Service Section -->
-                    <div class="bg-red-50 p-3 shadow-sm rounded-sm">
+                    <div class="bg-white p-3 shadow-sm rounded-sm">
                         <div>
                             <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
                                 <span clas="text-green-500">
@@ -314,11 +318,11 @@
                                         <!-- Product Card-->
                                         <div class="min-h-1/2 mx-0 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Hair Cut</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 250</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -326,11 +330,11 @@
                                         <!-- Product Card-->
                                         <div class="min-h-1/2 mx-0 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Blow Dry</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 150</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -338,11 +342,11 @@
                                         <!-- Product Card-->
                                         <div class="max-h-1/2 mx-2 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Beard Trim</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 300</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -350,11 +354,11 @@
                                         <!-- Product Card-->
                                         <div class="max-h-1/2 mx-2 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Head Shave</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 600</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -362,11 +366,11 @@
                                         <!-- Product Card-->
                                         <div class="max-h-1/2 mx-2 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Hair Art</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 1000</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -380,7 +384,7 @@
                     <div class="my-4"></div>
 
                     <!-- Products Section -->
-                    <div class="bg-red-50 p-3 shadow-sm rounded-sm">
+                    <div class="bg-white p-3 shadow-sm rounded-sm">
                         <div>
                             <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
                                 <span clas="text-green-500">
@@ -398,11 +402,11 @@
                                         <!-- Product Card-->
                                         <div class="min-h-1/2 mx-0 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Hair Gel</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 149</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -410,11 +414,11 @@
                                         <!-- Product Card-->
                                         <div class="min-h-1/2 mx-0 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Hair Spray</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 199</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -422,11 +426,11 @@
                                         <!-- Product Card-->
                                         <div class="max-h-1/2 mx-2 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Teasing Comb</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 99</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -434,11 +438,11 @@
                                         <!-- Product Card-->
                                         <div class="max-h-1/2 mx-2 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Hair Pins</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 40</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -446,11 +450,11 @@
                                         <!-- Product Card-->
                                         <div class="max-h-1/2 mx-2 flex">
                                             <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <img class="w-32 object-cover rounded-t-md" src="../assets/images/sampleimage.jpg" alt="" />
                                             <div class="mt-2">
-                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <h1 class="text-sm font-semibold text-gray-700">Razor</h1>
                                                 <div class="flex justify-between">
-                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                <button class="block text-sm text-gray-700 cursor-auto">₱ 30</button>
                                                 </div>
                                             </div>
                                             </div>
