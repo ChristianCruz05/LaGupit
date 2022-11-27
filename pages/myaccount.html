@@ -57,17 +57,19 @@
 	</style>
 
     <title>Home - LaGupit</title>
-    
+
 </head>
 
 <body class="bg-red-50">
     <header>
         <nav class="colorpalette3 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <!-- Logo -->
             <a href="" class="flex items-center">
                 <img src="../assets/images/LaGupitLogo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">La Gupit</span>
             </a>
+            <!-- Menu -->
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
               <ul class="flex flex-col bg-transparent mt-2 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
@@ -93,373 +95,374 @@
               </ul>
             </div>
             </div>
-        </nav>
-              
-                </header>
+        </nav> 
+    </header>
     
-
-		<main>
-
-
-
-
-<div class="bg-gray-100">
- <div class="w-full text-white bg-main-color">
-        <div x-data="{ open: false }"
-            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-
-
-        </div>
-    </div>
-    <!-- End of Navbar -->
-
-    <div class="container mx-auto my-5 p-5">
-        <div class="md:flex no-wrap md:-mx-2 ">
-            <!-- Left Side -->
-            <div class="w-full md:w-3/12 md:mx-2">
-                <!-- Profile Card -->
-                <div class="bg-white p-3 border-t-4 border-green-400">
-                    <div class="image overflow-hidden">
-                        <img class="h-2/5 rounded-lg mx-auto"
-                        src="https://cdn.australianageingagenda.com.au/wp-content/uploads/2015/06/28085920/Phil-Beckett-2-e1435107243361.jpg"
-                        alt="">
-                    </div>
-                    <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">Jane Doe</h1>
-                    <h3 class="text-gray-600 font-lg text-semibold leading-6">Owner at Her Company Inc.</h3>
-                    <p class="text-sm text-gray-500 hover:text-gray-600 leading-6">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Reprehenderit, eligendi dolorum sequi illum qui unde aspernatur non deserunt</p>
-                    <ul
-                        class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
-                        <li class="flex items-center py-3">
-                            <span>Status</span>
-                            <span class="ml-auto"><span
-                                    class="bg-green-500 py-1 px-2 rounded text-white text-sm">Active</span></span>
-                        </li>
-                        <li class="flex items-center py-3">
-                            <span>Member since</span>
-                            <span class="ml-auto">Nov 07, 2016</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End of profile card -->
-                <div class="my-4"></div>
-                <!-- Friends card -->
-                <div class="bg-white p-3 hover:shadow">
-                    <div class="flex items-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
-                        <span class="text-green-500">
-                            <svg class="h-5 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </span>
-                        <span>Review</span>
-                    </div>
-<!-- component -->
-<!-- review item -->
-<div class="">
-    <div class="mb-1 tracking-wide px-4 py-4" >
-       <h2 class="text-gray-800 font-semibold mt-1">67 Users reviews</h2>
-       <div class="border-b -mx-8 px-8 pb-3">
-          <div class="flex items-center mt-1">
-             <div class=" w-1/5 text-indigo-500 tracking-tighter">
-                <span>5 star</span>
-             </div>
-             <div class="w-3/5">
-                <div class="bg-gray-300 w-full rounded-lg h-2">
-                   <div class=" w-7/12 bg-indigo-600 rounded-lg h-2"></div>
-                </div>
-             </div>
-             <div class="w-1/5 text-gray-700 pl-3">
-                <span class="text-sm">51%</span>
-             </div>
-          </div><!-- first -->
-          <div class="flex items-center mt-1">
-             <div class="w-1/5 text-indigo-500 tracking-tighter">
-                <span>4 star</span>
-             </div>
-             <div class="w-3/5">
-                <div class="bg-gray-300 w-full rounded-lg h-2">
-                   <div class="w-1/5 bg-indigo-600 rounded-lg h-2"></div>
-                </div>
-             </div>
-             <div class="w-1/5 text-gray-700 pl-3">
-                <span class="text-sm">17%</span>
-             </div>
-          </div><!-- second -->
-          <div class="flex items-center mt-1">
-             <div class="w-1/5 text-indigo-500 tracking-tighter">
-                <span>3 star</span>
-             </div>
-             <div class="w-3/5">
-                <div class="bg-gray-300 w-full rounded-lg h-2">
-                   <div class=" w-3/12 bg-indigo-600 rounded-lg h-2"></div>
-                </div>
-             </div>
-             <div class="w-1/5 text-gray-700 pl-3">
-                <span class="text-sm">19%</span>
-             </div>
-          </div><!-- thierd -->
-          <div class="flex items-center mt-1">
-             <div class=" w-1/5 text-indigo-500 tracking-tighter">
-                <span>2 star</span>
-             </div>
-             <div class="w-3/5">
-                <div class="bg-gray-300 w-full rounded-lg h-2">
-                   <div class=" w-1/5 bg-indigo-600 rounded-lg h-2"></div>
-                </div>
-             </div>
-             <div class="w-1/5 text-gray-700 pl-3">
-                <span class="text-sm">8%</span>
-             </div>
-          </div><!-- 4th -->
-          <div class="flex items-center mt-1">
-             <div class="w-1/5 text-indigo-500 tracking-tighter">
-                <span>1 star</span>
-             </div>
-             <div class="w-3/5">
-                <div class="bg-gray-300 w-full rounded-lg h-2">
-                   <div class=" w-2/12 bg-indigo-600 rounded-lg h-2"></div>
-                </div>
-             </div>
-             <div class="w-1/5 text-gray-700 pl-3">
-                <span class="text-sm">5%</span>
-             </div>
-          </div><!-- 5th -->
-       </div>
-    </div>
-    <div class="w-full px-4">
-       <h3 class="font-medium tracking-tight">Review them</h3>
-       <p class="text-gray-700 text-sm py-1">
-          give your review about your experience
-       </p>
-       <button class="bg-gray-100 border border-gray-400 px-3 py-1 rounded  text-gray-800 mt-2">write a review</button>
-    </div>
- </div>
-                </div>
-                <!-- End of friends card -->
+    <main>
+    <div class="bg-gray-100">
+        <div class="w-full text-white bg-main-color">
+            <div x-data="{ open: false }"
+                class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             </div>
-            <!-- Right Side -->
-            <div class="w-full md:w-9/12 mx-2 h-64">
-                
-                <!-- Profile tab -->
-                <!-- About Section -->
-                <div class="bg-white p-3 shadow-sm rounded-sm">
-                    <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
-                        <span clas="text-green-500">
-                            <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </span>
-                        <span class="tracking-wide">About</span>
+        </div>
+
+        <div class="container mx-auto my-5 p-5">
+            <div class="md:flex no-wrap md:-mx-2 ">
+                <!-- Left Side -->
+                <div class="w-full md:w-3/12 md:mx-2">
+                    <!-- Profile Card -->
+                    <div class="bg-white p-3 border-t-4 border-green-400">
+                        <div class="image overflow-hidden">
+                            <img class="h-2/5 rounded-lg mx-auto"
+                            src="https://cdn.australianageingagenda.com.au/wp-content/uploads/2015/06/28085920/Phil-Beckett-2-e1435107243361.jpg"
+                            alt="">
+                        </div>
+                        <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">Jane Doe</h1>
+                        <h3 class="text-gray-600 font-lg text-semibold leading-6">Owner at Her Company Inc.</h3>
+                        <p class="text-sm text-gray-500 hover:text-gray-600 leading-6">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Reprehenderit, eligendi dolorum sequi illum qui unde aspernatur non deserunt</p>
+                        <ul
+                            class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
+                            <li class="flex items-center py-3">
+                                <span>Status</span>
+                                <span class="ml-auto"><span
+                                        class="bg-green-500 py-1 px-2 rounded text-white text-sm">Active</span></span>
+                            </li>
+                            <li class="flex items-center py-3">
+                                <span>Member since</span>
+                                <span class="ml-auto">Nov 07, 2016</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="text-gray-700">
-                        <div class="grid md:grid-cols-2 text-sm">
-                            <div class="grid grid-cols-2">
-                                <div class="px-4 py-2 font-semibold">Gender</div>
-                                <div class="px-4 py-2">Female</div>
-                            </div>
-                            <div class="grid grid-cols-2">
-                                <div class="px-4 py-2 font-semibold">Contact No.</div>
-                                <div class="px-4 py-2">+11 998001001</div>
-                            </div>
-                            <div class="grid grid-cols-2">
-                                <div class="px-4 py-2 font-semibold">Email.</div>
-                                <div class="px-4 py-2">
-                                    <a class="text-blue-800" href="mailto:jane@example.com">jane@example.com</a>
+                    <!-- End of profile card -->
+                    <div class="my-4"></div>
+                    <!-- Reviews card -->
+                    <div class="bg-white p-3 hover:shadow">
+                        <div class="flex items-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
+                            <span class="text-green-500">
+                                <svg class="h-5 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </span>
+                            <span>Review</span>
+                        </div>
+                        <!-- review item -->
+                        <div>
+                        <div class="mb-1 tracking-wide px-4 py-4" >
+                            <h2 class="text-gray-800 font-semibold mt-1">67 Users reviews</h2>
+                            <div class="border-b -mx-8 px-8 pb-3">
+                                <div class="flex items-center mt-1">
+                                    <div class=" w-1/5 text-indigo-500 tracking-tighter">
+                                        <span>5 star</span>
+                                    </div>
+                                    <div class="w-3/5">
+                                        <div class="bg-gray-300 w-full rounded-lg h-2">
+                                            <div class=" w-7/12 bg-indigo-600 rounded-lg h-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 text-gray-700 pl-3">
+                                        <span class="text-sm">51%</span>
+                                    </div>
+                                </div>
+                                <!-- 1st -->
+                                <div class="flex items-center mt-1">
+                                    <div class="w-1/5 text-indigo-500 tracking-tighter">
+                                        <span>4 star</span>
+                                    </div>
+                                    <div class="w-3/5">
+                                        <div class="bg-gray-300 w-full rounded-lg h-2">
+                                            <div class="w-1/5 bg-indigo-600 rounded-lg h-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 text-gray-700 pl-3">
+                                        <span class="text-sm">17%</span>
+                                    </div>
+                                </div>
+                                <!-- 2nd -->
+                                <div class="flex items-center mt-1">
+                                    <div class="w-1/5 text-indigo-500 tracking-tighter">
+                                        <span>3 star</span>
+                                    </div>
+                                    <div class="w-3/5">
+                                        <div class="bg-gray-300 w-full rounded-lg h-2">
+                                        <div class=" w-3/12 bg-indigo-600 rounded-lg h-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 text-gray-700 pl-3">
+                                        <span class="text-sm">19%</span>
+                                    </div>
+                                </div>
+                                <!-- 3rd -->
+                                <div class="flex items-center mt-1">
+                                    <div class=" w-1/5 text-indigo-500 tracking-tighter">
+                                        <span>2 star</span>
+                                    </div>
+                                    <div class="w-3/5">
+                                        <div class="bg-gray-300 w-full rounded-lg h-2">
+                                            <div class=" w-1/5 bg-indigo-600 rounded-lg h-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 text-gray-700 pl-3">
+                                        <span class="text-sm">8%</span>
+                                    </div>
+                                </div>
+                                <!-- 4th -->
+                                <div class="flex items-center mt-1">
+                                    <div class="w-1/5 text-indigo-500 tracking-tighter">
+                                        <span>1 star</span>
+                                    </div>
+                                    <div class="w-3/5">
+                                        <div class="bg-gray-300 w-full rounded-lg h-2">
+                                            <div class=" w-2/12 bg-indigo-600 rounded-lg h-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/5 text-gray-700 pl-3">
+                                        <span class="text-sm">5%</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2">
-                                <div class="px-4 py-2 font-semibold">Birthday</div>
-                                <div class="px-4 py-2">Feb 06, 1998</div>
+                        </div>
+                            <!-- Review -->
+                            <div class="w-full px-4">
+                                <h3 class="font-medium tracking-tight">Review them</h3>
+                                <p class="text-gray-700 text-sm py-1">
+                                    give your review about your experience
+                                </p>
+                                <button class="bg-gray-100 border border-gray-400 px-3 py-1 rounded  text-gray-800 mt-2">
+                                    write a review
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <button
-                        class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show
-                        Full Information</button>
+                    <!-- End of review card -->
                 </div>
-                <!-- End of about section -->
 
-                <div class="my-4"></div>
-
-                <!-- Experience and education -->
-                <div class="bg-red-50 p-3 shadow-sm rounded-sm">
-
-                    <div>
-                        <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                <!-- Right Side -->
+                <!-- Profile tab -->
+                <div class="w-full md:w-9/12 mx-2 h-64">    
+                    <!-- About Section -->
+                    <div class="bg-white p-3 shadow-sm rounded-sm">
+                        <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
                             <span clas="text-green-500">
                                 <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                 </svg>
                             </span>
-                            <span class="tracking-wide">My Product</span>
+                            <span class="tracking-wide">About</span>
                         </div>
-                    <!--Product Cards-->
-                    <div class="flex grid grid-cols-5">
-                                <!-- Create By Joker Banny -->
-                                    <!-- Product Card-->
-                                    <div class="min-h-1/2 mx-0 flex">
-                                        <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                        <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                        <div class="mt-2">
-                                            <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                            <div class="flex justify-between">
-                                            <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>   
-                                    <!-- Product Card-->
-                                    <div class="min-h-1/2 mx-0 flex">
-                                        <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                        <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                        <div class="mt-2">
-                                            <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                            <div class="flex justify-between">
-                                            <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>                                                             
-                                    <!-- Product Card-->
-                                    <div class="max-h-1/2 mx-2 flex">
-                                        <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                        <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                        <div class="mt-2">
-                                            <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                            <div class="flex justify-between">
-                                            <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                            </div>
-                                        </div>
-                                        </div>
+                        <div class="text-gray-700">
+                            <div class="grid md:grid-cols-2 text-sm">
+                                <div class="grid grid-cols-2">
+                                    <div class="px-4 py-2 font-semibold">Gender</div>
+                                    <div class="px-4 py-2">Female</div>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <div class="px-4 py-2 font-semibold">Contact No.</div>
+                                    <div class="px-4 py-2">+11 998001001</div>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <div class="px-4 py-2 font-semibold">Email.</div>
+                                    <div class="px-4 py-2">
+                                        <a class="text-blue-800" href="mailto:jane@example.com">jane@example.com</a>
                                     </div>
-                                    <!-- Product Card-->
-                                    <div class="max-h-1/2 mx-2 flex">
-                                        <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                        <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                        <div class="mt-2">
-                                            <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                            <div class="flex justify-between">
-                                            <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>    
-                                    <!-- Product Card-->
-                                    <div class="max-h-1/2 mx-2 flex">
-                                        <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                        <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                        <div class="mt-2">
-                                            <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                            <div class="flex justify-between">
-                                            <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>                                                           
-                        </div>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <div class="px-4 py-2 font-semibold">Birthday</div>
+                                    <div class="px-4 py-2">Feb 06, 1998</div>
+                                </div>
                             </div>
+                        </div>
+                        <button
+                            class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show
+                            Full Information</button>
+                    </div> <!--bg-white p-3 shadow-sm rounded-sm-->
+                    <!-- End of about section -->
 
+                    <div class="my-4"></div>
+
+                    <!-- Service Section -->
+                    <div class="bg-red-50 p-3 shadow-sm rounded-sm">
+                        <div>
+                            <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                                <span clas="text-green-500">
+                                    <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </span>
+                                <span class="tracking-wide">My Services</span>
+                            </div>
+                        <!--Service Cards-->
+                        <div class="flex grid grid-cols-5">
+                                    <!-- Create By Joker Banny -->
+                                        <!-- Product Card-->
+                                        <div class="min-h-1/2 mx-0 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>   
+                                        <!-- Product Card-->
+                                        <div class="min-h-1/2 mx-0 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>                                                             
+                                        <!-- Product Card-->
+                                        <div class="max-h-1/2 mx-2 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Card-->
+                                        <div class="max-h-1/2 mx-2 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>    
+                                        <!-- Product Card-->
+                                        <div class="max-h-1/2 mx-2 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>                                                           
+                        </div> <!-- End of Service Cards -->
                         </div>
-                        <div class="mt-2">
-                            <div>
-                                <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
-                                    <span clas="text-green-500">
-                                        <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                        </svg>
-                                    </span>
-                                    <span class="tracking-wide">My Product</span>
-                                </div>
-                            <!--Product Cards-->
-                            <div class="flex grid grid-cols-5">
-                            <!-- Create By Joker Banny -->
-                                <!-- Product Card-->
-                                <div class="min-h-1/2 mx-0 flex">
-                                    <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                    <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                    <div class="mt-2">
-                                        <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                        <div class="flex justify-between">
-                                        <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>   
-                                <!-- Product Card-->
-                                <div class="min-h-1/2 mx-0 flex">
-                                    <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                    <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                    <div class="mt-2">
-                                        <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                        <div class="flex justify-between">
-                                        <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>                                                             
-                                <!-- Product Card-->
-                                <div class="max-h-1/2 mx-2 flex">
-                                    <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                    <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                    <div class="mt-2">
-                                        <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                        <div class="flex justify-between">
-                                        <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <!-- Product Card-->
-                                <div class="max-h-1/2 mx-2 flex">
-                                    <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                    <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                    <div class="mt-2">
-                                        <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                        <div class="flex justify-between">
-                                        <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>    
-                                <!-- Product Card-->
-                                <div class="max-h-1/2 mx-2 flex">
-                                    <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
-                                    <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
-                                    <div class="mt-2">
-                                        <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
-                                        <div class="flex justify-between">
-                                        <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>                                 
-                                
-                                
+
+                </div> <!-- End of Service Section-->
+                    
+
+                    <div class="my-4"></div>
+
+                    <!-- Products Section -->
+                    <div class="bg-red-50 p-3 shadow-sm rounded-sm">
+                        <div>
+                            <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                                <span clas="text-green-500">
+                                    <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </span>
+                                <span class="tracking-wide">My Products</span>
                             </div>
-                                </div>
-    
-                            </div>
-                    </div>
-                    <!-- End of Experience and education grid -->
+                        <!--Service Cards-->
+                        <div class="flex grid grid-cols-5">
+                                    <!-- Create By Joker Banny -->
+                                        <!-- Product Card-->
+                                        <div class="min-h-1/2 mx-0 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>   
+                                        <!-- Product Card-->
+                                        <div class="min-h-1/2 mx-0 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>                                                             
+                                        <!-- Product Card-->
+                                        <div class="max-h-1/2 mx-2 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Card-->
+                                        <div class="max-h-1/2 mx-2 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>    
+                                        <!-- Product Card-->
+                                        <div class="max-h-1/2 mx-2 flex">
+                                            <div class="w- p-2 bg-white rounded-xl hover:scale-105 transition-all transform duration-500">
+                                            <img class="w-32 object-cover rounded-t-md" src="https://images.unsplash.com/photo-1509223197845-458d87318791" alt="" />
+                                            <div class="mt-2">
+                                                <h1 class="text-sm font-semibold text-gray-700">Zebra</h1>
+                                                <div class="flex justify-between">
+                                                <button class="block text-sm text-gray-700 cursor-auto">$12.99</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>                                                           
+                        </div> <!-- End of Product Cards -->
+                        </div>
+
+                </div> <!-- End of Products Section-->
+                    
+
+
+
+
+                </div> <!--End of Profile Tab -->
                 </div>
-                <!-- End of profile tab -->
             </div>
         </div>
     </div>
-</div>
 
-<!--remove after -->
 
-		</main>
+
+	</main>
 		
 		<footer>
 				
