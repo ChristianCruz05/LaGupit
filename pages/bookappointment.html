@@ -156,8 +156,9 @@
 
 		<main>
 <!-- Code on GiHub: https://github.com/vitalikda/form-floating-labels-tailwindcss -->
-  <div class="min-h-screen p-0 sm:p-12">
-    <div class="mx-auto max-w-md px-6 py-12 bg-red-50 border-0 shadow-lg sm:rounded-3xl">
+<div class="grid grid-cols-1 content-start">
+  <div class="min-h-screen sm:p-12">
+    <div class="mx-auto max-w-lg px-6 py-12 bg-red-50 border-0 shadow-lg sm:rounded-3xl">
       <h1 class="text-2xl font-bold mb-8">My Appointment</h1>
       <form id="form" novalidate>
         <!--name-->
@@ -234,7 +235,7 @@
             <option value="4">Option 4</option>
             <option value="5">Option 5</option>
           </select>
-          <label for="select" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Select an option</label>
+          <label for="select" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">What will you get?</label>
           <span class="text-sm text-red-600 hidden" id="error">Option has to be selected</span>
         </div>
   
@@ -273,6 +274,7 @@
       </form>
     </div>
   </div>
+</div>
   
   <script>
     'use strict'
