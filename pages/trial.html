@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">	
+		
+		<!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap" rel="stylesheet">
+    
+		<!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
+
+		<!--SCRIPTS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+			<!--STYLE-->
+			<style>
+				header {
+				background-color: #2C2828;
+				}
+				* {box-sizing:border-box}
+				
+        .colorpalette3 {
+          background-color: #C69895;
+        }
+			</style>
+
+    <title>Home - LaGupit</title>
+</head>
+<body class="bg-red-50">
+  <header>
+    <header class="header colorpalette3 sticky top-0 shadow-md flex items-center justify-between px-8 py-02">
+        <!-- logo -->
+      <div class="w-16">
+        <h1>
+            <a href="">
+             <img src="../assets/images/LaGupitLogoWGrayBG.png">       
+        </a>
+        </h1>
+      </div>
+        <!-- navigation -->
+        <nav class="nav font-semibold text-lg">
+            <ul class="flex items-center">
+                <li class="px-4 mt-4 border-b-4 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+                  <a href="">Home</a>
+                </li>
+                <li class="px-4 mt-4 border-b-4 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                  <a href="">Shop</a>
+                </li>
+                <li class="px-4 mt-4 border-b-4 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                  <a href="">Book</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- buttons --->
+        <div class="w-11/12 flex justify-end p-2">
+            <a href="">
+                <svg class="h-8 p-1 m-2 hover:text-green-500 duration-200" aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-9x"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z" class=""></path></svg>
+            </a>
+            <a href="">
+                <svg class="h-8 p-1 m-2 hover:text-green-500 duration-200" aria-hidden="true" focusable="false" data-prefix="far" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-7x"><path fill="currentColor" d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"></path></svg>
+            </a>
+    
+    
+      <!-- component -->
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    
+      <div x-data="{ open: false }" class="w-64 flex justify-center items-center">
+          <div @click="open = !open" class="relative border-b-4 border-transparent" :class="{'border-indigo-700 transform transition duration-300 ': open}" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100">
+            <div class="flex justify-center items-center space-x-3 cursor-pointer">
+              <div class="w-12 h-12 rounded-full overflow-hidden border-2 dark:border-white border-gray-900">
+                <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="font-semibold dark:text-white text-gray-900 text-lg">
+                <div class="cursor-pointer">Beep Boopy</div>
+              </div>
+            </div>
+            <div class="absolute w-full py-3 bg-red-50 dark:bg-gray-800 rounded-lg shadow border dark:border-transparent mt-2" x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95"">
+              <ul class="space-y-3 dark:text-white">
+                <li class="font-medium">
+                  <a href="#" class="flex items-left transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                    <div class="mr-3">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    Account
+                  </a>
+                </li>
+                <li class="font-medium">
+                  <a href="#" class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                    <div class="mr-3">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    Setting
+                  </a>
+                </li>
+                <hr class="dark:border-gray-700">
+                <li class="font-medium">
+                  <a href="#" class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-red-600">
+                    <div class="mr-3 text-red-600">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    </div>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+              
+        </header>
+    
+
+		<main>
+            <h1 class="text-center font-bold py-10 text-3xl">Ratings Card</h1>
+            <div class="container max-w-sm mx-auto items-center text-center bg-white rounded drop-shadow-lg px-5 md:px-0">
+              <div class="pt-8 font-bold text-2xl tracking-wide">Customer reviews</div>
+              <div class="flex mt-4 justify-center">
+                <div
+                  class="flex items-center inline-block py-3 px-2.5 space-x-2 leading-none text-center whitespace-nowrap align-baseline text-sm bg-gray-200 text-dark rounded-full">
+                  <div class="items-center">
+                    <ul class="flex justify-center">
+                      <li>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
+                          class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
+                          class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
+                          class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
+                          class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star"
+                          class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z">
+                          </path>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="items-center font-bold">3.9/5</div>
+                </div>
+              </div>
+              <div class="text-xs">40 customer reviews</div>
+              <div class="pt-6 flex items-center justify-center">
+                <ul class="flex flex-col w-full">
+                  <li class="flex flex-row">
+                    <div class="flex mx-auto justify-center items-center space-x-3 p-2 text-center">
+                      <div class="flex text-black text-xs">
+                        5
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="w-48 bg-gray-200 h-3 rounded-md">
+                        <div class="bg-green-600 h-3 rounded-md" style="width: 40%"></div>
+                      </div>
+                      <div class="text-black text-xs">40%</div>
+                    </div>
+                  </li>
+                  <li class="flex flex-row">
+                    <div class="flex mx-auto justify-center items-center space-x-3 p-2 text-center">
+                      <div class="flex text-black text-xs">
+                        4
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="w-48 bg-gray-200 h-3 rounded-md">
+                        <div class="bg-green-500 h-3 rounded-md" style="width: 30%"></div>
+                      </div>
+                      <div class="text-black text-xs">30%</div>
+                    </div>
+                  </li>
+                  <li class="flex flex-row">
+                    <div class="flex mx-auto justify-center items-center space-x-3 p-2 text-center">
+                      <div class="flex text-black text-xs">
+                        3
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="w-48 bg-gray-200 h-3 rounded-md">
+                        <div class="bg-yellow-500 h-3 rounded-md" style="width: 15%"></div>
+                      </div>
+                      <div class="text-black text-xs">15%</div>
+                    </div>
+                  </li>
+                  <li class="flex flex-row">
+                    <div class="flex mx-auto justify-center items-center space-x-3 p-2 text-center">
+                      <div class="flex text-black text-xs">
+                        2
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="w-48 bg-gray-200 h-3 rounded-md">
+                        <div class="bg-yellow-600 h-3 rounded-md" style="width: 12%"></div>
+                      </div>
+                      <div class="text-black text-xs">10%</div>
+                    </div>
+                  </li>
+                  <li class="flex flex-row">
+                    <div class="flex mx-auto justify-center items-center space-x-3 p-2 text-center">
+                      <div class="flex text-black text-xs">
+                        1
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                          <path fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="w-48 bg-gray-200 h-3 rounded-md">
+                        <div class="bg-red-500 h-3 rounded-md" style="width: 5%"></div>
+                      </div>
+                      <div class="text-black text-xs">05%</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-3 pb-8 items-center">
+                <a href="#"
+                  class="px-2 py-2 text-xs text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-200 hover:text-black">View
+                  all reviews</a>
+              </div>
+            </div>
+		</main>
+		
+		<footer>
+				
+		</footer>
+    
+</body>
+</html>
