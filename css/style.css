@@ -21,6 +21,8 @@ div{
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  display: flex;
+  float: left;
   margin: auto;
 }
 
