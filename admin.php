@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+
     	
 		<!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap" rel="stylesheet">
     
 		<!--CSS-->
-        <link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/bootstrap.css">
+        
+
 
 		<!--SCRIPTS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -24,7 +24,8 @@
     <!--STYLE-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-      
+      @import url('./css/bootstrap.css');
+      @import url('./css/plugins/morris.css');
       div{
         font-family: 'Questrial', sans-serif;
       }   
@@ -57,7 +58,7 @@
 <body>
 <main>
 
-</main>
+
 		    <div id="wrapper">
 
         <!-- Navigation -->
@@ -70,7 +71,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="admin.php">CRUD Using PHP/MySQL</a>
+                <a class="navbar-brand" href="admin.php">LAGUPIT ADMIN PAGE</a>
             </div>
      
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -125,10 +126,10 @@
         <tr>
             <td><?php echo $row['first_name']; ?></td>
             <td><?php echo $row['last_name']; ?></td>
-             <td><?php echo $row['mid_name']; ?></td>
+             <td><?php echo $row['password']; ?></td>
             <td><?php echo $row['address']; ?></td>
-             <td><?php echo $row['contact']; ?></td>
-            <td><?php echo $row['comment']; ?></td>
+             <td><?php echo $row['contact_number']; ?></td>
+            <td><?php echo $row['role']; ?></td>
             <td>
                 <a href="edit.php?id=<?php echo $row['people_id']; ?>" class="edit_btn" >Edit</a>
             </td>
@@ -151,6 +152,7 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
+</main>
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
