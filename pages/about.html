@@ -1,19 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">	
+            
+            <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap" rel="stylesheet">
+        
+            <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+    
+            <!--SCRIPTS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    
+            <!--STYLE-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+            
+            div{
+                font-family: 'Questrial', sans-serif;
+            }   
+    
+            header {
+            background-color: #2C2828;
+            }
+            * {box-sizing:border-box}
+                   
+            .colorpalette2 {
+              background-color: #e58a76;
+            }        
+    
+            .colorpalette3 {
+              background-color: #C69895;
+            }
+    
+            :root {
+                --main-color: #4a76a8;
+            }
+    
+            .bg-main-color {
+                background-color: var(--main-color);
+            }
+    
+            .text-main-color {
+                color: var(--main-color);
+            }
+    
+            .border-main-color {
+                border-color: var(--main-color);
+            }        
+        </style>
+    
+        <title>Documents</title>
+    
+    </head>
+
 <body>
+    <header>
+        <nav class="colorpalette2 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <!-- Logo-->
+            <a href="" class="flex items-center">
+                <img src="../assets/images/LaGupitLogo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">La Gupit</span>
+            </a>
+            <!-- Menu -->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+              <ul class="flex flex-col bg-transparent mt-2 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                  <a href="#" 
+                  class="block py-2 pl-3 pr-4 text-gray-700 bg-red-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" 
+                  aria-current="page">Home</a>
+                </li>
+                <li>
+                  <a href="#" 
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                  About</a>
+                </li>
+                <li>
+                  <a href="#" 
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                  Services</a>
+                </li>
+                <li>
+                  <a href="#" 
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                  Contact</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+        </nav> 
+    </header>
+
+    
     <main>
-        <div>
-            <h1>About Us</h1>
-            <p>
-                Developing a B2B Online Platform For Barbers and Salons Within Quezon Avenue
-            </p>
+        <div class="py-16 bg-white">  
+            <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+                <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                  <div class="md:5/12 lg:w-5/12">
+                    <img src="../assets/images/LaGupitLogo.png" alt="logo" loading="lazy" width="" height="">
+                  </div>
+                  <div class="md:7/12 lg:w-6/12">
+                    <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">About Us</h2>
+                    <p class="mt-6 text-gray-600"> Developing a B2B Online Platform For Barbers and Salons Within Quezon Avenue.</p>
+                    <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+                  </div>
+                </div>
+            </div>
         </div>
+
         <div>
         <!--OBJECTIVES-->
             <h1>Objectives</h1>
