@@ -20,6 +20,7 @@
 
 		<!--SCRIPTS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--STYLE-->
     <style>
@@ -113,7 +114,7 @@
                              <label>Role</label>
                               <input class="form-control" rows="3"  name="role"></input>
                             </div>  
-                            <button type="submit" class="btn btn-default">Save Record</button>
+                            <button type="submit" class="btn btn-default add_btn">Save Record</button>
                             <button type="reset" class="btn btn-default">Clear Entry</button>
 
 
@@ -142,6 +143,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="./js/notifications.js"></script>
 </body>
 </html>

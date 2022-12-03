@@ -2,16 +2,16 @@
 			$zz = $_POST['id'];
 			$fname = $_POST['firstname'];
 		    $lname = $_POST['lastname'];
-			$pword = $_POST['password'];
+			$mname = $_POST['Middlename'];
 			$address = $_POST['Address'];
-			$contct = $_POST['ContactNumber'];
+			$contct = $_POST['Contact'];
 			$role = $_POST['role'];
 			
 	   include('config.php');
 		
 	 			$query = 'UPDATE user set first_name ="'.$fname.'",
-					last_name ="'.$lname.'", password="'.$pword.'",
-					address="'.$address.'",contact_number='.$contct.', 
+					last_name ="'.$lname.'", password="'.$mname.'",
+					address="'.$address.'",contact_number="'.$contct.'", 
 					role="'.$role.'" WHERE
 					user_id ="'.$zz.'"';
 					$result = mysqli_query($db, $query) or die(mysqli_error($db));

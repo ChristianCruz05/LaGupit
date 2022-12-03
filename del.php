@@ -2,7 +2,7 @@
 <?php
        
        include('config.php');
-       
+       header('location: admin.php?m=1')
         ?>  
 
 <body>
@@ -16,8 +16,8 @@
 						
 ?>
 			<script type="text/javascript">
-				alert("Successfully Deleted.");
-				window.location = "admin.php";
+				// alert("Successfully Deleted.");
+				// window.location = "admin.php";
 			</script>				
 				
 			<?php

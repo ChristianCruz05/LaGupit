@@ -57,7 +57,7 @@
 </head>
 <body>
 <main>
-    <div id="wrapper">
+          <div id="wrapper">
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -69,7 +69,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Dashboard</a>
+                <a class="navbar-brand" href="index.php">CRUD Using PHP/MySQL</a>
             </div>
      
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -84,7 +84,6 @@
             <!-- /.navbar-collapse -->
         </nav>
 
-  
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -92,9 +91,9 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h4 class="page-header">
-                           Edit Records
-                        </h4>
+                        <h1 class="page-header">
+                           PHP CRUD <small>Create, Read, Update and Delete</small>
+                        </h1>
                        
                     </div>
                 </div>
@@ -124,6 +123,7 @@ $query = 'SELECT * FROM user
 ?>
 
              <div class="col-lg-12">
+                  <h2>Edit Records</h2>
                       <div class="col-lg-6">
 
                         <form role="form" method="post" action="edit-do.php">
@@ -138,19 +138,21 @@ $query = 'SELECT * FROM user
                               <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $a; ?>">
                             </div> 
                             <div class="form-group">
-                              <input class="form-control" placeholder="Password" name="password" value="<?php echo $b; ?>">
+                              <input class="form-control" placeholder="Password" name="Middlename" value="<?php echo $b; ?>">
                             </div> 
                             <div class="form-group">
                               <input class="form-control" placeholder="Address" name="Address" value="<?php echo $c; ?>">
                             </div> 
                             <div class="form-group">
-                              <input class="form-control" placeholder="Contact Number" name="ContactNumber" value="<?php echo $d; ?>">
+                              <input class="form-control" placeholder="Contact Number" name="Contact" value="<?php echo $d; ?>">
                             </div> 
                             <div class="form-group">
                              <label>Role</label>
-                              <input class="form-control"  name="role" value="<?php echo $e; ?>">
+                              <input class="form-control" name="role" value="<?php echo $e; ?>">
                             </div>  
                             <button type="submit" class="btn btn-default">Update Record</button>
+                         
+
 
                       </form>  
                     </div>
@@ -161,7 +163,6 @@ $query = 'SELECT * FROM user
 
         </div>
         <!-- /#page-wrapper -->
-
 
     </div>
     <!-- /#wrapper -->

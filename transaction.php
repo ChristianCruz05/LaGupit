@@ -23,6 +23,6 @@ switch ($_GET['action'])
 }
 ?>
     	<script type="text/javascript">
-			alert("Successfully added.");
+			alert("Successfully added user.");
 			window.location = "admin.php";
 	</script>

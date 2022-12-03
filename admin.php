@@ -20,7 +20,7 @@
 
 		<!--SCRIPTS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--STYLE-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
@@ -101,12 +101,17 @@
                 <!-- /.row -->
 
 
-             <div class="col-lg-12">
-                  <h4>User Information's</h4>
+             <div class="col-lg-6">
+                  <h4>User Information</h4>
                       <div class="col-lg-6">
                        <?php include 'config.php'; ?>
 
                         <?php $results = mysqli_query($db, "SELECT * FROM user"); ?>
+                        </div>
+            </div>
+            <div class="col-lg-6">
+                  <a href="add.php"class="btn btn-outline-dark">Add New User</a>
+            </div>
 
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
     <thead>
@@ -138,6 +143,10 @@
         </tr>
     <?php } ?>
 </table>
+<?php if(isset($_GET['m'])):?>
+        <div class="flash-data" data-flashdata="<?= $_GET['m'];?>"></div>
+?>
+<?php endif;?>
                     </div>
                 </div>
                 
@@ -164,6 +173,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="./js/notifications.js"></script>
 </body>
 </html>
