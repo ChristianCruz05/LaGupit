@@ -20,7 +20,7 @@
 
 		<!--SCRIPTS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!--STYLE-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
@@ -57,8 +57,7 @@
 </head>
 <body>
 <main>
-
-		<div id="wrapper container-fluid">
+          <div id="wrapper">
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -70,7 +69,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand bg-dark text-light" href="admin.php">LAGUPIT ADMIN PAGE</a>
+                <a class="navbar-brand" href="index.php">CRUD Using PHP/MySQL</a>
             </div>
      
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -93,7 +92,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                           USER DATABASE
+                           PHP CRUD <small>Create, Read, Update and Delete</small>
                         </h1>
                        
                     </div>
@@ -101,52 +100,61 @@
                 <!-- /.row -->
 
 
-             <div class="col-lg-6">
-                  <h4>User Information</h4>
-                      <div class="col-lg-6">
-                       <?php include 'config.php'; ?>
-
-                        <?php $results = mysqli_query($db, "SELECT * FROM user"); ?>
-                        </div>
-            </div>
-            <div class="col-lg-6">
-                  <a href="add.php"class="btn btn-outline-dark">Add New User</a>
-            </div>
-
-<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-    <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Middle Name</th>
-            <th>Address</th>
-            <th>Contact Number</th>
-            <th>Comment</th>
-            <th colspan="2">Action</th>
-        </tr>
-    </thead>
-    
-    <?php while ($row = mysqli_fetch_array($results)) { ?>
-        <tr>
-            <td><?php echo $row['first_name']; ?></td>
-            <td><?php echo $row['last_name']; ?></td>
-             <td><?php echo $row['password']; ?></td>
-            <td><?php echo $row['address']; ?></td>
-             <td><?php echo $row['contact_number']; ?></td>
-            <td><?php echo $row['role']; ?></td>
-            <td>
-                <a href="edit.php?id=<?php echo $row['user_id']; ?>" class="edit_btn" >Edit</a>
-            </td>
-            <td>
-                <a href="del.php?id=<?php echo $row['user_id']; ?>" class="del_btn">Delete</a>
-            </td>
-        </tr>
-    <?php } ?>
-</table>
-<?php if(isset($_GET['m'])):?>
-        <div class="flash-data" data-flashdata="<?= $_GET['m'];?>"></div>
+             <?php
+include "config.php"; 
+$query = 'SELECT * FROM user
+              WHERE
+              user_id ='.$_GET['id'];
+            $result = mysqli_query($db, $query) or die(mysqli_error($db));
+              while($row = mysqli_fetch_array($result))
+              {   
+                $zz= $row['user_id'];
+                $i= $row['first_name'];
+                $a=$row['last_name'];
+                $b=$row['password'];
+                $c=$row['address'];
+                $d=$row['contact_number'];
+                $e=$row['role'];
+             
+              }
+              
+              $id = $_GET['id'];
+         
 ?>
-<?php endif;?>
+
+             <div class="col-lg-12">
+                  <h2>Edit Records</h2>
+                      <div class="col-lg-6">
+
+                        <form role="form" method="post" action="edit-do.php">
+                            
+                            <div class="form-group">
+                                <input type="hidden" name="id" value="<?php echo $zz; ?>" />
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $i; ?>">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $a; ?>">
+                            </div> 
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Password" name="Middlename" value="<?php echo $b; ?>">
+                            </div> 
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Address" name="Address" value="<?php echo $c; ?>">
+                            </div> 
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Contact Number" name="Contact" value="<?php echo $d; ?>">
+                            </div> 
+                            <div class="form-group">
+                             <label>Role</label>
+                              <input class="form-control" name="role" value="<?php echo $e; ?>">
+                            </div>  
+                            <button type="submit" class="btn btn-default">Update Record</button>
+                         
+
+
+                      </form>  
                     </div>
                 </div>
                 
@@ -158,8 +166,6 @@
 
     </div>
     <!-- /#wrapper -->
-
-    <!-- jQuery -->
 </main>
     <script src="./js/jquery.js"></script>
 
@@ -173,6 +179,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/notifications.js"></script>
+
 </body>
 </html>

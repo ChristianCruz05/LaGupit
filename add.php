@@ -20,7 +20,8 @@
 
 		<!--SCRIPTS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!--STYLE-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
@@ -57,8 +58,7 @@
 </head>
 <body>
 <main>
-
-		<div id="wrapper container-fluid">
+    <div id="wrapper">
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -70,7 +70,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand bg-dark text-light" href="admin.php">LAGUPIT ADMIN PAGE</a>
+                <a class="navbar-brand" href="index.php">Dashboard</a>
             </div>
      
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -89,64 +89,36 @@
 
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                           USER DATABASE
-                        </h1>
-                       
-                    </div>
-                </div>
-                <!-- /.row -->
-
-
-             <div class="col-lg-6">
-                  <h4>User Information</h4>
+             <div class="col-lg-12">
+                  <h4>Add new Records</h4>
                       <div class="col-lg-6">
-                       <?php include 'config.php'; ?>
 
-                        <?php $results = mysqli_query($db, "SELECT * FROM user"); ?>
-                        </div>
-            </div>
-            <div class="col-lg-6">
-                  <a href="add.php"class="btn btn-outline-dark">Add New User</a>
-            </div>
+                        <form role="form" method="post" action="transaction.php?action=add">
+                            
+                            <div class="form-group">
+                              <input class="form-control" placeholder="First Name" name="firstname">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Last Name" name="lastname">
+                            </div> 
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Password" name="password">
+                            </div> 
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Address" name="Address">
+                            </div> 
+                            <div class="form-group">
+                              <input class="form-control" placeholder="Contact Number" name="ContactNumber">
+                            </div> 
+                            <div class="form-group">
+                             <label>Role</label>
+                              <input class="form-control" rows="3"  name="role"></input>
+                            </div>  
+                            <button type="submit" class="btn btn-default add_btn">Save Record</button>
+                            <button type="reset" class="btn btn-default">Clear Entry</button>
 
-<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-    <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Middle Name</th>
-            <th>Address</th>
-            <th>Contact Number</th>
-            <th>Comment</th>
-            <th colspan="2">Action</th>
-        </tr>
-    </thead>
-    
-    <?php while ($row = mysqli_fetch_array($results)) { ?>
-        <tr>
-            <td><?php echo $row['first_name']; ?></td>
-            <td><?php echo $row['last_name']; ?></td>
-             <td><?php echo $row['password']; ?></td>
-            <td><?php echo $row['address']; ?></td>
-             <td><?php echo $row['contact_number']; ?></td>
-            <td><?php echo $row['role']; ?></td>
-            <td>
-                <a href="edit.php?id=<?php echo $row['user_id']; ?>" class="edit_btn" >Edit</a>
-            </td>
-            <td>
-                <a href="del.php?id=<?php echo $row['user_id']; ?>" class="del_btn">Delete</a>
-            </td>
-        </tr>
-    <?php } ?>
-</table>
-<?php if(isset($_GET['m'])):?>
-        <div class="flash-data" data-flashdata="<?= $_GET['m'];?>"></div>
-?>
-<?php endif;?>
+
+                      </form>  
                     </div>
                 </div>
                 
@@ -158,8 +130,6 @@
 
     </div>
     <!-- /#wrapper -->
-
-    <!-- jQuery -->
 </main>
     <script src="./js/jquery.js"></script>
 
@@ -173,6 +143,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/notifications.js"></script>
+<script src="./js/notifications.js"></script>
 </body>
 </html>
