@@ -53,8 +53,9 @@
 </head>
 
 <body class="bg-red-50">
-  <header>
-<!-- component -->
+
+<header>
+<!-- nav bar-->
 <nav class="colorpalette4 w-full flex relative justify-between items-center mx-auto px-8 h-20">
   <!-- logo -->
   <div class="inline-flex">
@@ -70,9 +71,7 @@
       </a>      
   </div>
 
-  <!-- end logo -->
-
-  <!-- login -->
+  <!-- nav bar cont -->
   <div class="flex-initial">
     <div class="flex justify-end items-center relative">
      
@@ -118,6 +117,7 @@
     <div class="block">
       <div @click.away="open = false" class="inline-relative" x-data="{ open: false }">
         <button @click="open = !open" class="inline-flex items-center relative px-2 border rounded-full hover:shadow-lg">
+          <!--hamburger icon-->
           <div class="pl-1">
             <svg
                 viewBox="0 0 32 32"
@@ -134,7 +134,7 @@
                 </g>
             </svg>
           </div>
-
+          <!--profile icon-->
           <div class="block flex-grow-0 flex-shrink-0 h-10 w-12 pl-5">
             <svg
                 viewBox="0 0 32 32"
@@ -160,11 +160,9 @@
       </div>
     </div>
 </nav>
-
-  </header>
+</header>
     
-
-		<main>
+<main>
 <!-- component -->
 <section class="text-gray-700 body-font overflow-hidden bg-white">
     <div class="container px-5 py-24 mx-auto">
