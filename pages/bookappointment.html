@@ -86,6 +86,8 @@
     <title>Home - LaGupit</title>
 </head>
 <body class="bg-gradient-to-r from-red-300 to-red-200">
+  <div class="relative min-h-screen flex bg-no-repeat bg-cover relative items-center"
+  style="background-image: url(../assets/images/reversedbackground.jpg);">
     <header>
         <nav class="colorpalette2 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -126,8 +128,8 @@
 		<main>
 <!-- Code on GiHub: https://github.com/vitalikda/form-floating-labels-tailwindcss -->
 <div class="grid grid-cols-1 content-start">
-  <div class="mt-20 sm:p-12">
-    <div class="mx-auto max-w-lg px-6 py-12 bg-red-50 border-0 shadow-lg sm:rounded-3xl">
+  <div class="mt-16 xl:ml-40 sm:p-12">
+    <div class="mx-auto max-w-lg px-6 py-12 colorpalette5 border-0 shadow-lg sm:rounded-3xl">
       <h1 class="text-2xl font-bold mb-8">My Appointment</h1>
       <form id="form" novalidate>
         <!--name-->
@@ -161,7 +163,6 @@
           />
           <label for="address" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Address</label>
         </div>
-
         
         <fieldset class="bg-transparent relative z-0 w-full p-px mb-5">
           <legend class="absolute grid-cols-1 text-gray-500 transform scale-75 -top-3 origin-0">Choose an option</legend>
@@ -195,7 +196,7 @@
             name="select"
             value=""
             onclick="this.setAttribute('value', this.value);"
-            class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-b border-gray-500 focus:outline-none focus:border-red-500 appearance-none"
+            class="py-2 block w-full px-0 mt-0 bg-transparent border-b border-gray-500 focus:outline-none focus:border-red-500 appearance-none"
           >
             <option value="" selected disabled hidden></option>
             <option value="1">Hair Cut</option>
@@ -233,11 +234,22 @@
             <span class="text-sm text-red-600 hidden" id="error">Time is required</span>
           </div>
         </div>
-        
+        <!--notes-->
+        <div class="relative z-0 w-full mb-5">
+          <input
+            type="text"
+            name="name"
+            placeholder=" "
+            required
+            class="pt-3 block w-full px-0 mt-0 bg-transparent border-b border-gray-500 focus:outline-none focus:border-red-500 appearance-none"
+          />
+          <label for="name" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Additional Notes</label>
+        </div>   
+
         <button
           id="button"
           type="button"
-          class="w-full px-6 py-3 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-pink-500 hover:bg-pink-600 hover:shadow-lg focus:outline-none"
+          class="w-full px-6 py-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none colorpalette2 hover:shadow-lg focus:outline-none"
         >
           Book Appointment
         </button>
