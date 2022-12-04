@@ -199,3 +199,18 @@ section::after {
 	width: 100%;
 	filter: drop-shadow(0 0 23px var(--animation-color))
   }
+
+  .input-wrapper input {
+	background-color: #eee;
+	border: none;
+	padding: 1rem;
+	font-size: 1rem;
+	width: 15em;
+	border-radius: 10rem;
+	color: lightcoral;
+	cursor: pointer;
+   }
+   
+   .input-wrapper input:focus {
+	outline-color: lightcoral;
+   }
