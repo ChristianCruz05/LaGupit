@@ -135,3 +135,11 @@ section::after {
 	font-size: 20px;
 }
 
+.sub {
+	position: relative;
+	left: 827px;
+	top: 40px;
+	font-size: 50px;
+	font-family: 'Questrial', sans-serif;
+	align-items: center;
+}
