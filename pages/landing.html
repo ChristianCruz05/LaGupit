@@ -83,6 +83,7 @@
     
 
 		<main>
+      <!--Carousel-->
       <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
         <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
             <span x-text="currentIndex"></span>/
@@ -95,10 +96,10 @@
             x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
             x-transition:leave-end="opacity-0">
             <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover opacity-70" />
-            <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
+            <!-- <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
                 Any kind of content here!
                 Primum in nostrane potestate est, quid meminerimus? Nulla erit controversia. Vestri haec verecundius, illi fortasse constantius. 
-            </figcaption>
+            </figcaption> -->
             </figure>
         </template>
     
@@ -144,8 +145,10 @@
             }))
         })
     </script>
+    <!--Carousel Ends Here-->
+    <h4 class="sub">Barbers</h4>
 
-
+<!--
 <section style="font-family: Montserrat" class=" bg-[#071e34] flex font-medium items-center justify-center h-screen">
 
   <section class="w-64 mx-auto bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg">
@@ -175,7 +178,8 @@
     <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">4.95/5</p>
   </div>
     
-  </section>
+  </section> -->
+
 
 <!--Testing-->
 <section>
