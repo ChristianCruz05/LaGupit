@@ -162,43 +162,8 @@ section::after {
 	font-size: 20px;
 }
 
-.sub {
-	position: relative;
-	left: 853px;
-	top: 40px;
-	font-size: 50px;
-	align-items: center;
-}
-
 /* === removing default button style ===*/
-.sub {
-	margin: 0;
-	height: auto;
-	background: transparent;
-	padding: 0;
-	border: none;
-  }
-  
-  /* button styling */
-  .sub {
-	--border-right: 6px;
-	--text-stroke-color: rgba(0, 0, 0, 0.6);
-	--animation-color: #000000;
-	--fs-size: 2em;
-	letter-spacing: 3px;
-	text-decoration: none;
-	font-size: var(--fs-size);
-	font-family: "Arial";
-	position: relative;
-	text-transform: uppercase;
-	color: transparent;
-	-webkit-text-stroke: 1px var(--text-stroke-color);
-  }
-  /* hover */
-  .sub:hover .actual-text {
-	width: 100%;
-	filter: drop-shadow(0 0 23px var(--animation-color))
-  }
+
 
   /* Product page CSS */
 
