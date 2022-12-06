@@ -90,9 +90,9 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
-                           PHP CRUD <small>Create, Read, Update and Delete</small>
-                        </h1>
+                        <h4 class="page-header">
+                           
+                        </h4>
                        
                     </div>
                 </div>
@@ -121,7 +121,7 @@
               ?>
 
              <div class="col-lg-12">
-                  <h2>Edit Records</h2>
+                  <h4>Edit Records</h4>
                       <div class="col-lg-6">
 
                         <form role="form" method="post" action="edit-do.php">
