@@ -10,6 +10,7 @@ $address = $_POST['Address'];
 $contact_number = $_POST['ContactNumber'];
 $role = $_POST['role'];
 
+//Add User
 switch ($_GET['action'])
 {
     case 'add':

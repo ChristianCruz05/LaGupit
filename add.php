@@ -116,9 +116,9 @@
                             </div>  
                             <button type="submit" class="btn btn-default add_btn">Save Record</button>
                             <button type="reset" class="btn btn-default">Clear Entry</button>
-
-
+                            
                       </form>  
+                      
                     </div>
                 </div>
                 
