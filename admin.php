@@ -145,7 +145,7 @@
 </table>
 <?php if(isset($_GET['m'])):?>
         <div class="flash-data" data-flashdata="<?= $_GET['m'];?>"></div>
-?>
+
 <?php endif;?>
                     </div>
                 </div>
