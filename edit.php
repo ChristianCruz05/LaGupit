@@ -1,4 +1,3 @@
-<!--La Gupit Landing Page (unfinished)-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +68,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">CRUD Using PHP/MySQL</a>
+                <a class="navbar-brand" href="index.php">Dashboard</a>
             </div>
      
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
@@ -101,26 +100,25 @@
 
 
              <?php
-include "config.php"; 
-$query = 'SELECT * FROM user
-              WHERE
-              user_id ='.$_GET['id'];
-            $result = mysqli_query($db, $query) or die(mysqli_error($db));
-              while($row = mysqli_fetch_array($result))
-              {   
-                $zz= $row['user_id'];
-                $i= $row['first_name'];
-                $a=$row['last_name'];
-                $b=$row['password'];
-                $c=$row['address'];
-                $d=$row['contact_number'];
-                $e=$row['role'];
-             
-              }
-              
-              $id = $_GET['id'];
-         
-?>
+              include "config.php"; 
+              $query = 'SELECT * FROM user
+                            WHERE
+                            user_id ='.$_GET['id'];
+                          $result = mysqli_query($db, $query) or die(mysqli_error($db));
+                            while($row = mysqli_fetch_array($result))
+                            {   
+                              $zz= $row['user_id'];
+                              $i= $row['first_name'];
+                              $a=$row['last_name'];
+                              $b=$row['password'];
+                              $c=$row['address'];
+                              $d=$row['contact_number'];
+                              $e=$row['role'];
+                          
+                            }
+                            
+                            $id = $_GET['id'];
+              ?>
 
              <div class="col-lg-12">
                   <h2>Edit Records</h2>
@@ -151,8 +149,6 @@ $query = 'SELECT * FROM user
                               <input class="form-control" name="role" value="<?php echo $e; ?>">
                             </div>  
                             <button type="submit" class="btn btn-default">Update Record</button>
-                         
-
 
                       </form>  
                     </div>
@@ -171,12 +167,6 @@ $query = 'SELECT * FROM user
 
     <!-- Bootstrap Core JavaScript -->
     <!-- <script src="./js/bootstrap.min.js"></script> -->
-
-    <!-- Morris Charts JavaScript -->
-    <!-- <script src="./js/plugins/morris/raphael.min.js"></script>
-    <script src="./js/plugins/morris/morris.min.js"></script>
-    <script src="./js/plugins/morris/morris-data.js"></script> -->
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
